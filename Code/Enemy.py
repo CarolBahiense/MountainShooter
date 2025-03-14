@@ -14,4 +14,4 @@ class Enemy(Entity):
         self.shoot_delay-=1
         if self.shoot_delay==0:
             self.shoot_delay = ENTITY_SHOOT_DELAY[self.name]
-            return EnemyShoot(name =f'{self.name}Shoot', position =(self.rect.centerx, self.rect.centery - self.rect.height/2))
+            return EnemyShoot(name =f'{self.name}Shoot', position =(self.rect.centerx, self.rect.centery))
